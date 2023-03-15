@@ -15,9 +15,9 @@ xx
 ## Pre-requisites
 Apart from the pre-installed Microsoft Office Suite, we need to install 2 important softwares.
 
-Power BI Desktop is used which is an open source Data Visualization software created by Microsoft as part of the Microsoft Business Intelligence Toolkit.
-- 1.1 Download Power BI from here.
-- 2.2 Step by step installation guide is available.
+1.Power BI Desktop is used which is an open source Data Visualization software created by Microsoft as part of the Microsoft Business Intelligence Toolkit.
+  1.1 Download Power BI from here.
+  1.2 Step by step installation guide is available.
 
 Microsft SQL Server, a relational database management system developed by Microsoft is used for Data Storage, Retrieval and data transformation.
 2.1 Download the SQL Server 2019 Developer version
