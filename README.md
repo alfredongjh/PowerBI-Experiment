@@ -146,13 +146,13 @@ Attached above is the visualization “Churn Rate by Tariff Plan” derived from
 # Predictive Analysis of Customer Churn via RapidMiner
 
 
-![Analytical Process](../main/ImageAssets/RapidMinerAnalyticalProcess)
+![Analytical Process](../main/ImageAssets/RapidMinerAnalyticalProcess.png)
 
-![Logistic Regression](../main/ImageAssets/RapidMinerLogisticRegression)
+![Logistic Regression](../main/ImageAssets/RapidMinerLogisticRegression.png)
 
-![Logistic Regression Performance](../main/ImageAssets/RapidMinerLogisticRegressionPerf)
+![Logistic Regression Performance](../main/ImageAssets/RapidMinerLogisticRegressionPerf.png)
 
-![Decision Tree Performance](../main/ImageAssets/RapidMinerDecisionTreePerf)
+![Decision Tree Performance](../main/ImageAssets/RapidMinerDecisionTreePerf.png)
 
 
 
