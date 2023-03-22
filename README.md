@@ -52,9 +52,7 @@ Apart from the pre-installed Microsoft Office Suite, we need to install 2 import
 Extract data from the provided datasets (Customer1, Customer2, & Data MobilePlans).
 Utilize SSIS to transform data. 
 
-![a])/../main/SSIS/SSIS DataTrf.png)
-
-![b](/SSIS/SSIS DataTrf.png)
+![SSIS](../ImageAssets/SSISDataTrf.png)
 
 
 **PowerBI**
