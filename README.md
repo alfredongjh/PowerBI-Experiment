@@ -99,15 +99,15 @@ This, will result in the following:
 
 ![Churn Analysis](../main/ImageAssets/PBIChurnAnalysis.png)
 
-![Churn Analysis](../main/ImageAssets/PBIChurnAnalysis2.png)
+![Churn Analysis2](../main/ImageAssets/PBIChurnAnalysis2.png)
 
-![Churn Analysis](../main/ImageAssets/PBIChurnByAge.png)
+![Churn by Age](../main/ImageAssets/PBIChurnByAge.png)
 
-![Churn Analysis](../main/ImageAssets/PBIComplaintsByAge.png)
+![Complaints by Age](../main/ImageAssets/PBIComplaintsByAge.png)
 
-![Churn Analysis](../main/ImageAssets/PBIChurnPredictors.png)
+![Churn Predictors](../main/ImageAssets/PBIChurnPredictors.png)
 
-![Churn Analysis](../main/ImageAssets/PBIChurntoTariff.png)
+![Churn to Tariff Plans](../main/ImageAssets/PBIChurntoTariff.png)
 
 **RapidMiner**
 
