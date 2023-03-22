@@ -1,6 +1,4 @@
-# PowerBI-Experiment (Work In Progress)
-Currently undergoing the documenting process.
-
+# PowerBI-Experiment
 # Executive Summary
 This report aims to analyse data provided by X Telecom to determine the drivers of customer churn, aid in understanding them, and subsequently inform X Telecom’s decision making. Contents of the report entail analytics, the drivers of customer churn, observations, potential areas for further analysis, and suggestions utilised to inform decision making.
 
@@ -113,7 +111,7 @@ This, will result in the following:
 
 Here we begin with a simple Analysis of the dataset by cooperating relevant data into a PowerBI Dashboard. I am looking to investigate two common assumptions of churn, and attempt to uncover if that assumption is valid.
 
-## Assumption 1. Customer Age Drives Churn
+## Assumption 1: Customer Age Drives Churn
 This assumption is drawn with the consideration that older users in general like to file more complaints as they become grumpy and then churn.
 
 ![Churn by Age](../main/ImageAssets/PBIChurnByAge.png)
@@ -123,7 +121,7 @@ This assumption is drawn with the consideration that older users in general like
 With regards to this assumption, I would disagree. As shown by the visualization named “Churn by Age Group”, we can see that the youngest age group has the highest percentage of churn. 40% of age group 16-20 vs 19% of age group 51-60. With regards to the claim that old people like to file complaints as they become grumpy, we can see from the visualization “Complaints by Age Group” that this is not true as well. After the age group 31-40, we can see a significant drop in complaints percentage per age group, disproving marketing team’s assumption.
 
 
-## Assumption 2. Customer Behaviour will strongly indate Customer Churn.
+## Assumption 2: Customer Behaviour will strongly indate Customer Churn.
 
 This assumption is drawn as (1) people who speak longer on the phone will have a better chance at experiencing how good the company’s service is and are less likely to churn, (2) people who use more data are able to experience the full benefit of the company and are less likely to churn, and that people who spend more money with the company receive the best service and are less likely to churn.
 
@@ -144,11 +142,28 @@ Attached above is the visualization “Churn Rate by Tariff Plan” derived from
 
 
 # Predictive Analysis of Customer Churn via RapidMiner
+Data Integration is an essential part of business analytical work and that answering descriptive questions through visualisations is helpful to effectively communicate with businesspeople. As such, I will utilize RapidMiner to predictively analyse the given data - in hopes to valuate some definitive answers about customer churn.
 
-
+## Analytical Process
 ![Analytical Process](../main/ImageAssets/RapidMinerAnalyticalProcess.png)
 
+## Logistic Regression
 ![Logistic Regression](../main/ImageAssets/RapidMinerLogisticRegression.png)
+
+**Interpretation of the results of the logistic regression**
+
+-	Most decisive predictor:
+
+The most decisive predictor of churn, as shown by the logistic regression, is complaints. This is determined by looking at the Standard Coefficient column, which is the normalised coefficient. This is supported by complaints with the lowest p-Value (derived from z-Value), which shows that complaints will have the highest impact on churn.
+
+-	Tariff Plan Impact:
+
+Even though the attribute negatively influences churn, we can see that its p-Value falls above the normal p-Value significance threshold of 0.05. This tells us that this attribute fails to reject the null hypothesis and is not significantly impacting churn.
+
+-	Data Usage Impact:
+
+From the analysis of data usage’s p-Value, we can see that its value is above the normal p-Value threshold. This shows that data usage does not significantly impact churn as well.
+
 
 ![Logistic Regression Performance](../main/ImageAssets/RapidMinerLogisticRegressionPerf.png)
 
