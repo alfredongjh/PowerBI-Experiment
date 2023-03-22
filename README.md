@@ -105,6 +105,9 @@ This, will result in the following:
 
 ![Churn Analysis](../main/ImageAssets/PBIComplaintsByAge.png)
 
+![Churn Analysis](../main/ImageAssets/PBIChurnPredictors.png)
+
+![Churn Analysis](../main/ImageAssets/PBIChurntoTariff.png)
 
 **RapidMiner**
 
