@@ -57,26 +57,26 @@ Utilize SSIS to transform data.
 ![Dimension 1](../main/ImageAssets/SSISDataTrf.png)
 
 This required some modifications to the datasets to workaround certain shortcomings.
-> ⦁	Ensure Data Type of flat file get data matches for connection managers Customer1 and 2. 
-> ⦁	Add “Splitting CC & CID” after Flat File Get Data (Customer2)
+> -	Ensure Data Type of flat file get data matches for connection managers Customer1 and 2. 
+> -	Add “Splitting CC & CID” after Flat File Get Data (Customer2)
 >     -	Expression 1: CountryCode: (DT_I2) LEFT([CountryCode&CustomerId],FINDSTRING([CountryCode&CustomerId] ,"+",1) - 1)
 >     -	Expression 2: CustomerID: (DT_I2)  RIGHT([CountryCode&CustomerId] ,LEN([CountryCode&CustomerId]) - FINDSTRING([CountryCode&CustomerId] ,"+",1))
-> ⦁	Configure “Union All” Input 2 mapping to derived CustomerID and add “CountryCode” input
-> ⦁	Add “Script Component” after “Sort by CID” to add “Customer Key” (database preparation) 
-> ⦁	Configure “Save Customer Dimension File” and map connection manager CustomerDimension
-> ⦁	Ensure Data Type of flat file get data matches for connection manager MobilePlans
-> ⦁	Add “TarrifPlanKey from PlanID” after flat file get data,
-> ⦁	Expression 1: TarrifPlanKEY: PlanID
-> ⦁	Add “Sort by TarrifPlanKey” to sort data according to TarrifPlanKey
-> ⦁	Configure “Save Product Dimension File” to include TarrifPlanKEY.
-> ⦁	Map connection manager ProductDimension
-> ⦁	Add “Multicast” after “Union All”
-> ⦁	Add “TarrifPlanKEY from Tariff Plan” after “Multicast”
-> ⦁	Expression 1: TariffPlanKEY: [Tariff Plan]
-> ⦁	Add “Sort2 by TarrifPlanKEY” to prepare for merge join
-> ⦁	Add “Merge Join” after “Sort2 by TarrifPlanKey”
-> ⦁	Edit “Merge Join” with left outer join as join type, select “TariffPlanKey” as the join key and select CustomerId and PlanId columns for fact table.
-> ⦁	Add “Save Fact Table File” and map connection manager “FactTable”.
+> -	Configure “Union All” Input 2 mapping to derived CustomerID and add “CountryCode” input
+> -	Add “Script Component” after “Sort by CID” to add “Customer Key” (database preparation) 
+> -	Configure “Save Customer Dimension File” and map connection manager CustomerDimension
+> -	Ensure Data Type of flat file get data matches for connection manager MobilePlans
+> -	Add “TarrifPlanKey from PlanID” after flat file get data,
+> -	Expression 1: TarrifPlanKEY: PlanID
+> -	Add “Sort by TarrifPlanKey” to sort data according to TarrifPlanKey
+> -	Configure “Save Product Dimension File” to include TarrifPlanKEY.
+> -	Map connection manager ProductDimension
+> -	Add “Multicast” after “Union All”
+> -	Add “TarrifPlanKEY from Tariff Plan” after “Multicast”
+> -	Expression 1: TariffPlanKEY: [Tariff Plan]
+> -	Add “Sort2 by TarrifPlanKEY” to prepare for merge join
+> -	Add “Merge Join” after “Sort2 by TarrifPlanKey”
+> -	Edit “Merge Join” with left outer join as join type, select “TariffPlanKey” as the join key and select CustomerId and PlanId columns for fact table.
+> -	Add “Save Fact Table File” and map connection manager “FactTable”.
 
 This, will result in the following:
 
