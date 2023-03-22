@@ -1,6 +1,15 @@
 # PowerBI-Experiment (Work In Progress)
 Currently undergoing the documenting process.
 
+## Executive Summary
+This report aims to analyse data provided by X Telecom to determine the drivers of customer churn, aid in understanding them, and subsequently inform X Telecom’s decision making. Contents of the report entail analytics, the drivers of customer churn, observations, potential areas for further analysis, and suggestions utilised to inform decision making.
+
+Using Power BI, the report first found the posited assumptions to be invalid. For example, the assumptions of age and yearly call duration being drivers of customer churn is untrue. However, the assumption that net customer spending drives customer churn seems to ring true. Subsequently, the report performed a logistic regression model analysis utilising the dataset, which yielded the most decisive predictor of customer churn, complaints. In addition, other identified impactful drivers are international plan, age groups, call count, subscription length and yearly call duration. This analysis also disproves the earlier assumption of net customer spending correlating to customer churn but requires further analysis for a decisive result.
+
+Next, I identified insights that included areas of improvement and potential areas for data analysis for better understanding. Primarily, I suggest further drilling into attributes such as complaints for complaint types and age groups for missing relationships and splitting the data set by age group for better insights about user types and behaviour.
+
+With our analysis and insights, the report subsequently discusses strategies to address the drivers of customer churn to aid in decision making. For example, to address complaints, Telecom could take a proactive and communicative approach with customers, increase the number of customer surveys, and ensure customers are satisfied with complaint resolutions. Strategies for further drivers are multifaceted and include additional advertisement campaigns for international plan customers and age group specific promotions and deals. 
+
 ## Business Context
 **X Telecom** is a major Australian mobile network company with business across different countries (i.e., Australia, UK, 
 China, USA, Germany). It offers four major plans with a monthly cost between $20-$50 AUD, different 
@@ -102,15 +111,38 @@ This, will result in the following:
 
 ![Churn Analysis2](../main/ImageAssets/PBIChurnAnalysis2.png)
 
+Here we begin with a simple Analysis of the dataset by cooperating relevant data into a PowerBI Dashboard. I am looking to investigate two common assumptions of churn, and attempt to uncover if that assumption is valid.
+
+**Assumption 1. Customer Age Drives Churn**
+This assumption is drawn with the consideration that older users in general like to file more complaints as they become grumpy and then churn.
+
 ![Churn by Age](../main/ImageAssets/PBIChurnByAge.png)
 
 ![Complaints by Age](../main/ImageAssets/PBIComplaintsByAge.png)
 
+With regards to this assumption, I would disagree. As shown by the visualization named “Churn by Age Group”, we can see that the youngest age group has the highest percentage of churn. 40% of age group 16-20 vs 19% of age group 51-60. With regards to the claim that old people like to file complaints as they become grumpy, we can see from the visualization “Complaints by Age Group” that this is not true as well. After the age group 31-40, we can see a significant drop in complaints percentage per age group, disproving marketing team’s assumption.
+
+
+**Assumption 2. Customer Behaviour will strongly indate Customer Churn. **
+This assumption is drawn as (1) people who speak longer on the phone will have a better chance at experiencing how good the company’s service is and are less likely to churn, (2) people who use more data are able to experience the full benefit of the company and are less likely to churn, and that people who spend more money with the company receive the best service and are less likely to churn.
+
 ![Churn Predictors](../main/ImageAssets/PBIChurnPredictors.png)
+
+(1) I disagree with assumption of people who speak longer are less likely to churn. As seen in the “Average of Yearly Call Duration (in Mins) by churn visualization, the doughnut chart shows an almost even split between churn and not churn. There is not enough data to draw to this assumption of customer behaviour. Moreover, we need more data to tell if longer call duration equates to higher chance of experiencing the company’s service quality and subsequently affect churn rate.
+
+(2) Figure “Average Weekly Data Usage by Churn” show that average weekly data usage by churned customers are higher than active customers (80.81 vs 78.30). This disproves marketing team’s assumption that correlates more data usage to less likelihood of churn. Regarding more data equating to experiencing the full benefit of the company, there is insufficient data to prove or disprove this part of the assumption.  
+
+(3) As proven by figure “Average Customer Value by Churn Flag”, we can say that customers who spend more money with the company are less likely to churn and therefore this part of the assumption is valid. However, we are unable to quantify and assume that customers who spent more money will receive the best service with the company as there is no data on service quality.
+
+
+**Tariff Plan Performance**
 
 ![Churn to Tariff Plans](../main/ImageAssets/PBIChurntoTariff.png)
 
-**RapidMiner**
+Attached above is the visualization “Churn Rate by Tariff Plan” derived from the report. This is created to aid X Telcom in valuating the performance of their existing Tariff Plans. The visualization denotes the company’s average churn rate to be 25.53%. As a result, Tariff plan 1 and 2’s product teams need to be concerned about their performance. This is due to their churn rate being higher than the company’s average, at 37.39% and 30.18% respectively. Tariff plan 3 and 4’s product teams are performing better as their churn rate is below the company’s average churn rate of 25.53%, at 18.46% and 16.08% respectively.
+
+
+## Predictive Analysis of Customer Churn via RapidMiner
 
 
 
