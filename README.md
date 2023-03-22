@@ -2,10 +2,19 @@
 In midst of attaining relative dataset.
 
 ## Business Context
-xx
+**X Telecom** is a major Australian mobile network company with business across different countries (i.e., Australia, UK, 
+China, USA, Germany). It offers four major plans with a monthly cost between $20-$50 AUD, different 
+data rates, and offers to complement plans with an option for international calls.
+
 
 ## Problem statement
-xx
+**X Telecom** is financially struggling as their customer churn has increased over the past. The churn rate, 
+also known as the rate of attrition or customer churn, is the rate at which customers stop doing business 
+with an entity. Telecom measures customer churn by looking at whether or not a customer discontinues 
+the service with them. If customers churn, it means that they stop doing business with Telecom and 
+move to another provider. The churn rate and growth rate are diametrically opposite factors, as the 
+former measures the loss of customers and the other measures the acquisition of customers.
+Attempt to understand drivers of their customer churn and inform their decision making. 
 
 ## Business Analysis
 xx
