@@ -136,7 +136,7 @@ This assumption is drawn as (1) people who speak longer on the phone will have a
 (3) As proven by figure “Average Customer Value by Churn Flag”, we can say that customers who spend more money with the company are less likely to churn and therefore this part of the assumption is valid. However, we are unable to quantify and assume that customers who spent more money will receive the best service with the company as there is no data on service quality.
 
 
-**Tariff Plan Performance**
+## Tariff Plan Performance
 
 ![Churn to Tariff Plans](../main/ImageAssets/PBIChurntoTariff.png)
 
@@ -145,6 +145,14 @@ Attached above is the visualization “Churn Rate by Tariff Plan” derived from
 
 # Predictive Analysis of Customer Churn via RapidMiner
 
+
+![Analytical Process](../main/ImageAssets/RapidMinerAnalyticalProcess)
+
+![Logistic Regression](../main/ImageAssets/RapidMinerLogisticRegression)
+
+![Logistic Regression Performance](../main/ImageAssets/RapidMinerLogisticRegressionPerf)
+
+![Decision Tree Performance](../main/ImageAssets/RapidMinerDecisionTreePerf)
 
 
 
