@@ -53,12 +53,15 @@ Extract data from the provided datasets (Customer1, Customer2, & Data MobilePlan
 Utilize SSIS to transform data. 
 
 **Customer Table (Dimension 1)**
+
 ![Dimension 1](../main/ImageAssets/DataViewerCustomerTable.png)
 
 **Mobile Plan Product Table (Dimension 2)**
+
 ![Mobile Plan Product Table](../main/ImageAssets/DataViewerPlanProductTable.png)
 
 **Fact Table**
+
 ![Fact Table](../main/ImageAssets/DataViewerFactTable.png)
 
 
