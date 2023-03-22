@@ -1,5 +1,5 @@
 # PowerBI-Experiment (Work In Progress)
-In midst of attaining relative dataset.
+Currently undergoing the documenting process.
 
 ## Business Context
 **X Telecom** is a major Australian mobile network company with business across different countries (i.e., Australia, UK, 
