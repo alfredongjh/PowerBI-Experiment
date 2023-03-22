@@ -52,11 +52,16 @@ Apart from the pre-installed Microsoft Office Suite, we need to install 2 import
 Extract data from the provided datasets (Customer1, Customer2, & Data MobilePlans).
 Utilize SSIS to transform data. 
 
-![SSIS](../main/ImageAssets/DataViewerCustomerTable.png)
+**Customer Table (Dimension 1)**
+![Dimension 1](../main/ImageAssets/DataViewerCustomerTable.png)
 
-![SSIS](../main/ImageAssets/DataViewerFactTable.png)
+**Mobile Plan Product Table (Dimension 2)**
+![Mobile Plan Product Table](../main/ImageAssets/DataViewerPlanProductTable.png)
 
-![SSIS](../main/ImageAssets/DataViewerPlanProductTable.png)
+**Fact Table**
+![Fact Table](../main/ImageAssets/DataViewerFactTable.png)
+
+
 
 
 
