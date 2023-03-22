@@ -14,11 +14,12 @@ with an entity. Telecom measures customer churn by looking at whether or not a c
 the service with them. If customers churn, it means that they stop doing business with Telecom and 
 move to another provider. The churn rate and growth rate are diametrically opposite factors, as the 
 former measures the loss of customers and the other measures the acquisition of customers.
-Attempt to understand drivers of their customer churn and inform their decision making. 
 
+## Business Analysis
+As a business analyst, I’ve defined the scope of the experiment. I will attempt to understand drivers of customer churn and inform X Telecom in their decision making. This will involve the usage of PowerBI to pit each datasets against another to identify possible relationships and correlations. 
 
 ## Data availability
-xx
+In this experiment case, pretransformed data is provided in multiple formats. I will first merge these data utilizing SSIS for better utilization in the subsequent processes. In the professional enviroment, data utilized for this experiment would be held in the company's secured SQL server. This would further require extraction from said server, subjected to the company's approval. 
 
 ## Pre-requisites
 Apart from the pre-installed Microsoft Office Suite, we need to install 2 important softwares.
