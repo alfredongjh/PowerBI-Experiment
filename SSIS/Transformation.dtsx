@@ -1,0 +1,2108 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/20/2021 2:27:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-IQB3AC8J"
+  DTS:CreatorName="LAPTOP-IQB3AC8J\gholi"
+  DTS:DTSID="{EA2350A3-E8D1-4E77-AA27-E650E1596AE4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{B959F427-3DB7-4177-878C-5016B9D7482D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Customer1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A7072ADA-04CC-4C02-9BA1-F0CA2B043114}"
+      DTS:ObjectName="Customer1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3081"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\alfre\OneDrive\Desktop\BISM 2021 Sem 2\BISM 2202\Assignment 2\SSIS\CustomerConsumptionData1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerId"
+              DTS:DTSID="{D293B808-E7B3-43C8-9BE6-B8F43899C1C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yearly Call Duration (in Mins)"
+              DTS:DTSID="{3F806C9A-C816-47E8-A79B-C09BAB9AB6D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Call Count"
+              DTS:DTSID="{BA7A08B0-56AF-40A9-A0CC-C9B689590EC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Data Usage"
+              DTS:DTSID="{BF81897F-A5BD-4B9D-AADF-B59BB10A7F8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Complaints"
+              DTS:DTSID="{477CEC72-9D73-435D-9D9C-4B883824947D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subscription  Length"
+              DTS:DTSID="{E74BF38A-DBBA-4FFA-997C-10CEEA68BE01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age Group"
+              DTS:DTSID="{69D3C2E5-A12F-4004-8743-A2C5381FCB89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tariff Plan"
+              DTS:DTSID="{6E18F3AB-E34B-44B8-9480-A1CE644365C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Churn"
+              DTS:DTSID="{4E150B53-FBA2-4045-B6A8-9680916F94B0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Customer2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A18A3324-D2B5-4C6B-8F88-985CE3929663}"
+      DTS:ObjectName="Customer2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3081"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\alfre\OneDrive\Desktop\BISM 2021 Sem 2\BISM 2202\Assignment 2\SSIS\CustomerConsumptionData2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryCode&amp;CustomerId"
+              DTS:DTSID="{B1AE29EC-75EF-43D4-9CF6-6346A0210B8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yearly Call Duration (in Mins)"
+              DTS:DTSID="{03F7EE5F-040A-4012-BCC4-7E19CCAE0849}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Call Count"
+              DTS:DTSID="{8E1C1365-CC81-4475-B4A2-B50CD4B9B599}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Data Usage"
+              DTS:DTSID="{3B36AAC6-DAFF-4FFE-BDB0-214D376AD1E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Complaints"
+              DTS:DTSID="{EF557627-3430-4409-BC70-919299A49B99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subscription  Length"
+              DTS:DTSID="{3383EB44-903D-47F7-959D-AC5643F95650}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age Group"
+              DTS:DTSID="{358EF92C-B6AB-417E-92CF-CE75E0DA89CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tariff Plan"
+              DTS:DTSID="{088D4B6E-0A8B-486E-8690-984D62E5DCF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Churn"
+              DTS:DTSID="{D7E1DD9C-E10F-41CE-A972-BF05FB285317}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Assignment"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{494EEB80-62D6-4741-AA6A-EEED1AA6E35E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Assignment"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Assignment\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Assignment\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Assignment\Derived Column.Inputs[Derived Column Input].Columns[CountryCode&amp;CustomerId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CountryCode&amp;CustomerId"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Assignment\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Derived Column.Outputs[Derived Column Output].Columns[CountryCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Assignment\Derived Column.Outputs[Derived Column Output].Columns[CountryCode]"
+                      name="CountryCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LEFT](#{Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]},[FINDSTRING](#{Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]},"+",1) - 1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LEFT([CountryCode&amp;CustomerId],FINDSTRING([CountryCode&amp;CustomerId],"+",1) - 1)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Derived Column.Outputs[Derived Column Output].Columns[CustomerID]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Assignment\Derived Column.Outputs[Derived Column Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I2)[RIGHT](#{Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]},[LEN](#{Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]}) - [FINDSTRING](#{Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]},"+",1))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I2)RIGHT([CountryCode&amp;CustomerId],LEN([CountryCode&amp;CustomerId]) - FINDSTRING([CountryCode&amp;CustomerId],"+",1))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Assignment\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Assignment\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Assignment\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Flat File Get Data (Customer1)"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="3081"
+              name="Flat File Get Data (Customer1)"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Assignment\Flat File Get Data (Customer1).Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Customer1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Customer1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[CustomerId]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[CustomerId]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[CustomerId]"
+                      name="CustomerId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Yearly Call Duration (in Mins)]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Yearly Call Duration (in Mins)]"
+                      name="Yearly Call Duration (in Mins)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Call Count]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Call Count]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Call Count]"
+                      name="Call Count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Data Usage]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Data Usage]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Data Usage]"
+                      name="Data Usage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Complaints]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Complaints]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Complaints]"
+                      name="Complaints"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Subscription  Length]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Subscription  Length]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Subscription  Length]"
+                      name="Subscription  Length"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Age Group]"
+                      length="5"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Age Group]"
+                      name="Age Group"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Tariff Plan]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Tariff Plan]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Tariff Plan]"
+                      name="Tariff Plan"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Churn]"
+                      length="3"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Churn]"
+                      name="Churn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[CustomerId]"
+                      dataType="i2"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      name="Yearly Call Duration (in Mins)" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Call Count]"
+                      dataType="i2"
+                      name="Call Count" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Data Usage]"
+                      dataType="i2"
+                      name="Data Usage" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Complaints]"
+                      dataType="i1"
+                      name="Complaints" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Subscription  Length]"
+                      dataType="i1"
+                      name="Subscription  Length" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Age Group" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Tariff Plan]"
+                      dataType="i1"
+                      name="Tariff Plan" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].ExternalColumns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Churn" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Flat File Get Data (Customer2)"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="3081"
+              name="Flat File Get Data (Customer2)"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Assignment\Flat File Get Data (Customer2).Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Customer2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Customer2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[CountryCode&amp;CustomerId]"
+                      length="50"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[CountryCode&amp;CustomerId]"
+                      name="CountryCode&amp;CustomerId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Yearly Call Duration (in Mins)]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Yearly Call Duration (in Mins)]"
+                      name="Yearly Call Duration (in Mins)"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Call Count]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Call Count]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Call Count]"
+                      name="Call Count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Data Usage]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Data Usage]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Data Usage]"
+                      name="Data Usage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Complaints]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Complaints]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Complaints]"
+                      name="Complaints"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Subscription  Length]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Subscription  Length]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Subscription  Length]"
+                      name="Subscription  Length"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Age Group]"
+                      length="5"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Age Group]"
+                      name="Age Group"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Tariff Plan]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Tariff Plan]"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Tariff Plan]"
+                      name="Tariff Plan"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Churn]"
+                      length="3"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].Columns[Churn]"
+                      name="Churn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[CountryCode&amp;CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="CountryCode&amp;CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      name="Yearly Call Duration (in Mins)" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Call Count]"
+                      dataType="i2"
+                      name="Call Count" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Data Usage]"
+                      dataType="i2"
+                      name="Data Usage" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Complaints]"
+                      dataType="i1"
+                      name="Complaints" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Subscription  Length]"
+                      dataType="i1"
+                      name="Subscription  Length" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Age Group" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Tariff Plan]"
+                      dataType="i1"
+                      name="Tariff Plan" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output].ExternalColumns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Churn" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Flat File Source (Get Data MobilePlans)"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source (Get Data MobilePlans)"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Connections[FlatFileConnection]"
+                  connectionManagerID="{04F28FBB-6D73-4283-B672-135507FD9D27}:invalid"
+                  connectionManagerRefId="{04F28FBB-6D73-4283-B672-135507FD9D27}:invalid"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanId]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[PlanId]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanId]"
+                      name="PlanId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[PlanName]"
+                      length="21"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanName]"
+                      name="PlanName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[MonthlyCost]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[MonthlyCost]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[MonthlyCost]"
+                      name="MonthlyCost"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[InternationalPlan]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[InternationalPlan]"
+                      length="3"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[InternationalPlan]"
+                      name="InternationalPlan"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[PlanId]"
+                      dataType="i1"
+                      name="PlanId" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[PlanName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="21"
+                      name="PlanName" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[MonthlyCost]"
+                      dataType="decimal"
+                      name="MonthlyCost" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].ExternalColumns[InternationalPlan]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="InternationalPlan" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Assignment\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Multicast.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Assignment\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\Assignment\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Multicast 1.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Assignment\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Assignment\Multicast 1.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Assignment\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Save Customer Dimension File"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Save Customer Dimension File"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Assignment\Save Customer Dimension File.Connections[FlatFileConnection]"
+                  connectionManagerID="{203A6D36-2D4E-4472-BF75-8AD3F7AF5F2A}:invalid"
+                  connectionManagerRefId="{203A6D36-2D4E-4472-BF75-8AD3F7AF5F2A}:invalid"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].Columns[CustomerId]"
+                      cachedDataType="i2"
+                      cachedName="CustomerId"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[CustomerId]"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[CustomerId]" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].Columns[Age Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Age Group"
+                      externalMetadataColumnId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[Age Group]"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Age Group]" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].Columns[CustomerKEY]"
+                      cachedDataType="i4"
+                      cachedName="CustomerKEY"
+                      externalMetadataColumnId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[CustomerKEY]"
+                      lineageId="Package\Assignment\253:invalid" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[CustomerId]"
+                      dataType="i2"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Age Group" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input].ExternalColumns[CustomerKEY]"
+                      dataType="i4"
+                      name="CustomerKEY" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Assignment\Save Product Dimension"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Save Product Dimension"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Assignment\Save Product Dimension.Connections[FlatFileConnection]"
+                  connectionManagerID="{5C8CCF25-BB16-4D66-B4E7-BCFE8D6B204E}:invalid"
+                  connectionManagerRefId="{5C8CCF25-BB16-4D66-B4E7-BCFE8D6B204E}:invalid"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].Columns[PlanId]"
+                      cachedDataType="i1"
+                      cachedName="PlanId"
+                      externalMetadataColumnId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[PlanId]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanId]" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].Columns[PlanName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="21"
+                      cachedName="PlanName"
+                      externalMetadataColumnId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[PlanName]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[PlanName]" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].Columns[MonthlyCost]"
+                      cachedDataType="decimal"
+                      cachedName="MonthlyCost"
+                      externalMetadataColumnId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[MonthlyCost]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[MonthlyCost]" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].Columns[TarrifPlanKEY]"
+                      cachedDataType="i4"
+                      cachedName="TarrifPlanKEY"
+                      externalMetadataColumnId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[TarrifPlanKEY]"
+                      lineageId="Package\Assignment\254:invalid" />
+                    <inputColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].Columns[InternationalPlan]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="InternationalPlan"
+                      externalMetadataColumnId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[InternationalPlan]"
+                      lineageId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output].Columns[InternationalPlan]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[PlanId]"
+                      dataType="i1"
+                      name="PlanId" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[PlanName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="21"
+                      name="PlanName" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[MonthlyCost]"
+                      dataType="decimal"
+                      name="MonthlyCost" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[TarrifPlanKEY]"
+                      dataType="i4"
+                      name="TarrifPlanKEY" />
+                    <externalMetadataColumn
+                      refId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input].ExternalColumns[InternationalPlan]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="InternationalPlan" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Assignment\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Assignment\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[CustomerId]"
+                      cachedDataType="i2"
+                      cachedName="CustomerId"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[CustomerId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Yearly Call Duration (in Mins)]"
+                      cachedDataType="i2"
+                      cachedName="Yearly Call Duration (in Mins)"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Yearly Call Duration (in Mins)]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Call Count]"
+                      cachedDataType="i2"
+                      cachedName="Call Count"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Call Count]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Data Usage]"
+                      cachedDataType="i2"
+                      cachedName="Data Usage"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Data Usage]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Complaints]"
+                      cachedDataType="i1"
+                      cachedName="Complaints"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Complaints]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Subscription  Length]"
+                      cachedDataType="i1"
+                      cachedName="Subscription  Length"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Subscription  Length]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Age Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Age Group"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Age Group]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Tariff Plan]"
+                      cachedDataType="i1"
+                      cachedName="Tariff Plan"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Tariff Plan]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Sort 1.Inputs[Sort Input].Columns[Churn]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Churn"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Churn]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[CustomerId]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[CustomerId]"
+                      name="CustomerId"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[CustomerId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Yearly Call Duration (in Mins)]"
+                      name="Yearly Call Duration (in Mins)">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Yearly Call Duration (in Mins)]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Call Count]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Call Count]"
+                      name="Call Count">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Call Count]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Data Usage]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Data Usage]"
+                      name="Data Usage">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Data Usage]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Complaints]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Complaints]"
+                      name="Complaints">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Complaints]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Subscription  Length]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Subscription  Length]"
+                      name="Subscription  Length">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Subscription  Length]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Age Group]"
+                      name="Age Group">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Age Group]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Tariff Plan]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Tariff Plan]"
+                      name="Tariff Plan">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Tariff Plan]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Assignment\Sort 1.Outputs[Sort Output].Columns[Churn]"
+                      name="Churn">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Churn]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Assignment\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Assignment\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[CustomerId]"
+                      cachedDataType="i2"
+                      cachedName="CustomerId"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[CustomerId]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[CustomerId]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Yearly Call Duration (in Mins)]"
+                      cachedDataType="i2"
+                      cachedName="Yearly Call Duration (in Mins)"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Yearly Call Duration (in Mins)]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Yearly Call Duration (in Mins)]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Call Count]"
+                      cachedDataType="i2"
+                      cachedName="Call Count"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Call Count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Call Count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Data Usage]"
+                      cachedDataType="i2"
+                      cachedName="Data Usage"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Data Usage]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Data Usage]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Complaints]"
+                      cachedDataType="i1"
+                      cachedName="Complaints"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Complaints]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Complaints]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Subscription  Length]"
+                      cachedDataType="i1"
+                      cachedName="Subscription  Length"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Subscription  Length]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Subscription  Length]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Age Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Age Group"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Age Group]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Age Group]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Tariff Plan]"
+                      cachedDataType="i1"
+                      cachedName="Tariff Plan"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Tariff Plan]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Tariff Plan]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Assignment\Union All.Inputs[Union All Input 1].Columns[Churn]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Churn"
+                      lineageId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output].Columns[Churn]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Churn]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Assignment\Union All.Inputs[Union All Input 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Assignment\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[CustomerId]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[CustomerId]"
+                      name="CustomerId" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Yearly Call Duration (in Mins)]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Yearly Call Duration (in Mins)]"
+                      name="Yearly Call Duration (in Mins)" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Call Count]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Call Count]"
+                      name="Call Count" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Data Usage]"
+                      dataType="i2"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Data Usage]"
+                      name="Data Usage" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Complaints]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Complaints]"
+                      name="Complaints" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Subscription  Length]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Subscription  Length]"
+                      name="Subscription  Length" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Age Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Age Group]"
+                      name="Age Group" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Tariff Plan]"
+                      dataType="i1"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Tariff Plan]"
+                      name="Tariff Plan" />
+                    <outputColumn
+                      refId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Churn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Assignment\Union All.Outputs[Union All Output 1].Columns[Churn]"
+                      name="Churn" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Assignment.Paths[Derived Column Output]"
+              endId="Package\Assignment\Multicast.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Assignment\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Assignment.Paths[Flat File Source Output]"
+              endId="Package\Assignment\Union All.Inputs[Union All Input 1]"
+              name="Flat File Source Output"
+              startId="Package\Assignment\Flat File Get Data (Customer1).Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Assignment.Paths[Flat File Source Output1]"
+              endId="Package\Assignment\Multicast 1.Inputs[Multicast Input 1]"
+              name="Flat File Source Output"
+              startId="Package\Assignment\Flat File Source (Get Data MobilePlans).Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Assignment.Paths[Flat File Source Output2]"
+              endId="Package\Assignment\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Assignment\Flat File Get Data (Customer2).Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Assignment.Paths[Multicast Output 2]"
+              endId="Package\Assignment\Save Product Dimension.Inputs[Flat File Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\Assignment\Multicast 1.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Assignment.Paths[Sort Output]"
+              endId="Package\Assignment\Save Customer Dimension File.Inputs[Flat File Destination Input]"
+              name="Sort Output"
+              startId="Package\Assignment\Sort 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Assignment.Paths[Union All Output 1]"
+              endId="Package\Assignment\Sort 1.Inputs[Sort Input]"
+              name="Union All Output 1"
+              startId="Package\Assignment\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Assignment"
+          TopLeft="111.666662229432,78.0000006198883" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Assignment">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Assignment\Multicast 1"
+          TopLeft="654.499974866709,219.600001653036" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Assignment\Save Product Dimension"
+          TopLeft="617.333306577472,429.600000743866" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Assignment\Flat File Get Data (Customer1)"
+          TopLeft="80.8333301213054,89.8666673967574" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Assignment\Union All"
+          TopLeft="64.999995231628,382.933334834841" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Assignment\Flat File Get Data (Customer2)"
+          TopLeft="323.333319293129,90.466667830679" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Assignment\Flat File Source (Get Data MobilePlans)"
+          TopLeft="614.333308564293,86.266667582724" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Assignment\Sort 1"
+          TopLeft="85.666661832068,477.800001074473" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Assignment\Save Customer Dimension File"
+          TopLeft="40.999998211861,598.000003140767" />
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Union All Output 1]"
+          TopLeft="150.083328531848,424.933334834841">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.866666239632"
+              Start="0,0"
+              End="0,45.366666239632">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.366666239632" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Sort Output]"
+          TopLeft="152.083330021964,519.800001074473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78.200002066294"
+              Start="0,0"
+              End="0,70.700002066294">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.700002066294" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,27.350001033147,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Multicast Output 2]"
+          TopLeft="716.166640722091,261.600001653036">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,167.99999909083"
+              Start="0,0"
+              End="0,160.49999909083">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,160.49999909083" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,72.249999545415,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Flat File Source Output1]"
+          TopLeft="715.416641715501,128.266667582724">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,91.333334070312"
+              Start="0,0"
+              End="0,83.833334070312">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,83.833334070312" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Flat File Source Output]"
+          TopLeft="166.833330121305,131.866667396757">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.8333348896774,251.066667438084"
+              Start="0,0"
+              End="-18.8333348896774,243.566667438084">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,121.533333719042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,121.533333719042"
+                    Point2="0,125.533333719042"
+                    Point3="-4,125.533333719042" />
+                  <mssgle:LineSegment
+                    End="-14.8333348896774,125.533333719042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.8333348896774,125.533333719042"
+                    Point2="-18.8333348896774,125.533333719042"
+                    Point3="-18.8333348896774,129.533333719042" />
+                  <mssgle:LineSegment
+                    End="-18.8333348896774,243.566667438084" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Assignment\Derived Column"
+          TopLeft="327,170" />
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Flat File Source Output2]"
+          TopLeft="408.166659646565,132.466667830679">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.533332169321"
+              Start="0,0"
+              End="0,30.033332169321">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.033332169321" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Assignment\Multicast"
+          TopLeft="343,262" />
+        <EdgeLayout
+          Id="Package\Assignment.Paths[Derived Column Output]"
+          TopLeft="405.25,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,13.25,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

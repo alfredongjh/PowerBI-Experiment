@@ -1,0 +1,5 @@
+PlanId,PlanName,MonthlyCost,InternationalPlan
+1,IPTeleConnect Plan S,$20 ,No
+2,IPTeleConnect Plan M,$30 ,No
+3,IPTeleConnect Plan L,$40 ,Yes
+4,IPTeleConnect Plan XL,$50 ,Yes
