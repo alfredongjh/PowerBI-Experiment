@@ -164,12 +164,12 @@ Even though the attribute negatively influences churn, we can see that its p-Val
 
 From the analysis of data usage’s p-Value, we can see that its value is above the normal p-Value threshold. This shows that data usage does not significantly impact churn as well.
 
-
+## Accuracy of Logistic Regression VS Decision Tree Performance
 ![Logistic Regression Performance](../main/ImageAssets/RapidMinerLogisticRegressionPerf.png)
 
 ![Decision Tree Performance](../main/ImageAssets/RapidMinerDecisionTreePerf.png)
 
-
+The above screenshots show that the Decision Tree’s analysis performance is slightly higher than the Logistic Regression analysis performance (79.11% vs 78.38%). The logistic regression analysis sees a slight deterioration to the overall prediction quality. Even though it is trendy and slightly more accurate, the decision tree model will be more challenging to interpret and would be a bad fit for this report. On the other hand, the logistic regression model enables us to better observe and understand the relationship between the various attributes. It does this by providing normalised coefficients (standard coefficients), which the decision tree model lacks. These standardised coefficients are useful when theorising the correlations between the data attributes. All things considered, this report chooses the logistic regression model as it is comparably easier to interpret and has a better fit.
 
 
 # Business Insights and Strategies
