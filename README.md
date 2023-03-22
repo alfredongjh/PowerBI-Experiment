@@ -103,8 +103,7 @@ This, will result in the following:
 
 
 
-##Creating Visualizations
-xx
+
 
 ## Business Insights and Strategies
 
