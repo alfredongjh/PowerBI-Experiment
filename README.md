@@ -123,7 +123,7 @@ This assumption is drawn with the consideration that older users in general like
 With regards to this assumption, I would disagree. As shown by the visualization named “Churn by Age Group”, we can see that the youngest age group has the highest percentage of churn. 40% of age group 16-20 vs 19% of age group 51-60. With regards to the claim that old people like to file complaints as they become grumpy, we can see from the visualization “Complaints by Age Group” that this is not true as well. After the age group 31-40, we can see a significant drop in complaints percentage per age group, disproving marketing team’s assumption.
 
 
-**Assumption 2. Customer Behaviour will strongly indate Customer Churn. **
+**Assumption 2. Customer Behaviour will strongly indate Customer Churn.**
 This assumption is drawn as (1) people who speak longer on the phone will have a better chance at experiencing how good the company’s service is and are less likely to churn, (2) people who use more data are able to experience the full benefit of the company and are less likely to churn, and that people who spend more money with the company receive the best service and are less likely to churn.
 
 ![Churn Predictors](../main/ImageAssets/PBIChurnPredictors.png)
