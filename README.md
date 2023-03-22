@@ -16,8 +16,6 @@ move to another provider. The churn rate and growth rate are diametrically oppos
 former measures the loss of customers and the other measures the acquisition of customers.
 Attempt to understand drivers of their customer churn and inform their decision making. 
 
-## Business Analysis
-xx
 
 ## Data availability
 xx
@@ -96,7 +94,16 @@ This, will result in the following:
 
 
 
-**PowerBI**
+## PowerBI Insights
+**Descriptive analysis of customer churn**
+
+![Churn Analysis](../main/ImageAssets/PBIChurnAnalysis.png)
+
+![Churn Analysis](../main/ImageAssets/PBIChurnAnalysis2.png)
+
+![Churn Analysis](../main/ImageAssets/PBIChurnByAge.png)
+
+![Churn Analysis](../main/ImageAssets/PBIComplaintsByAge.png)
 
 
 **RapidMiner**
