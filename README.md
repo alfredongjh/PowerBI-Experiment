@@ -1,7 +1,7 @@
 # PowerBI-Experiment (Work In Progress)
 Currently undergoing the documenting process.
 
-## Executive Summary
+# Executive Summary
 This report aims to analyse data provided by X Telecom to determine the drivers of customer churn, aid in understanding them, and subsequently inform X Telecom’s decision making. Contents of the report entail analytics, the drivers of customer churn, observations, potential areas for further analysis, and suggestions utilised to inform decision making.
 
 Using Power BI, the report first found the posited assumptions to be invalid. For example, the assumptions of age and yearly call duration being drivers of customer churn is untrue. However, the assumption that net customer spending drives customer churn seems to ring true. Subsequently, the report performed a logistic regression model analysis utilising the dataset, which yielded the most decisive predictor of customer churn, complaints. In addition, other identified impactful drivers are international plan, age groups, call count, subscription length and yearly call duration. This analysis also disproves the earlier assumption of net customer spending correlating to customer churn but requires further analysis for a decisive result.
@@ -10,13 +10,13 @@ Next, I identified insights that included areas of improvement and potential are
 
 With our analysis and insights, the report subsequently discusses strategies to address the drivers of customer churn to aid in decision making. For example, to address complaints, Telecom could take a proactive and communicative approach with customers, increase the number of customer surveys, and ensure customers are satisfied with complaint resolutions. Strategies for further drivers are multifaceted and include additional advertisement campaigns for international plan customers and age group specific promotions and deals. 
 
-## Business Context
+# Business Context
 **X Telecom** is a major Australian mobile network company with business across different countries (i.e., Australia, UK, 
 China, USA, Germany). It offers four major plans with a monthly cost between $20-$50 AUD, different 
 data rates, and offers to complement plans with an option for international calls.
 
 
-## Problem statement
+# Problem statement
 **X Telecom** is financially struggling as their customer churn has increased over the past. The churn rate, 
 also known as the rate of attrition or customer churn, is the rate at which customers stop doing business 
 with an entity. Telecom measures customer churn by looking at whether or not a customer discontinues 
@@ -24,13 +24,13 @@ the service with them. If customers churn, it means that they stop doing busines
 move to another provider. The churn rate and growth rate are diametrically opposite factors, as the 
 former measures the loss of customers and the other measures the acquisition of customers.
 
-## Business Analysis
+# Business Analysis
 As a business analyst, I’ve defined the scope of the experiment. I will attempt to understand drivers of customer churn and inform X Telecom in their decision making. This will involve the usage of PowerBI to pit each datasets against another to identify possible relationships and correlations. 
 
-## Data availability
+# Data availability
 In this experiment case, pretransformed data is provided in multiple formats. I will first merge these data utilizing SSIS for better utilization in the subsequent processes. In the professional enviroment, data utilized for this experiment would be held in the company's secured SQL server. This would further require extraction from said server, subjected to the company's approval. 
 
-## Pre-requisites
+# Pre-requisites
 Apart from the pre-installed Microsoft Office Suite, we need to install 2 important softwares.
 
 1. **Power BI**, an open source Data Visualization software created by Microsoft as part of the Microsoft Business Intelligence Toolkit.
@@ -55,7 +55,7 @@ Apart from the pre-installed Microsoft Office Suite, we need to install 2 import
     - Download RapidMiner
     - Step by step installation guide available.
 
-## Data Extraction, Transformation and Loading
+# Data Extraction, Transformation and Loading
 **SSIS**
 Extract data from the provided datasets (Customer1, Customer2, & Data MobilePlans).
 Utilize SSIS to transform data. 
@@ -104,7 +104,7 @@ This, will result in the following:
 
 
 
-## PowerBI Insights
+# PowerBI Insights
 **Descriptive analysis of customer churn**
 
 ![Churn Analysis](../main/ImageAssets/PBIChurnAnalysis.png)
@@ -143,13 +143,13 @@ This assumption is drawn as (1) people who speak longer on the phone will have a
 Attached above is the visualization “Churn Rate by Tariff Plan” derived from the report. This is created to aid X Telcom in valuating the performance of their existing Tariff Plans. The visualization denotes the company’s average churn rate to be 25.53%. As a result, Tariff plan 1 and 2’s product teams need to be concerned about their performance. This is due to their churn rate being higher than the company’s average, at 37.39% and 30.18% respectively. Tariff plan 3 and 4’s product teams are performing better as their churn rate is below the company’s average churn rate of 25.53%, at 18.46% and 16.08% respectively.
 
 
-## Predictive Analysis of Customer Churn via RapidMiner
+# Predictive Analysis of Customer Churn via RapidMiner
 
 
 
 
 
-## Business Insights and Strategies
+# Business Insights and Strategies
 
 **Report Findings**
 
@@ -169,7 +169,7 @@ The age group is also a factor contributing to churn, particularly the age group
 Earlier analysis had also found that customers with international plan add-ons are less likely to churn. Therefore, we propose more advertising to attract these customers. In addition, Telecom could also introduce promotions for international plan customers with benefits aligned with the other churn contributing factors mentioned above.
 
 
-## References
+# References
 Ascarza, E., 2018. Retention futility: Targeting high-risk customers might be ineffective. Journal of Marketing Research, 55(1), pp.80-98.
 
 Oracle. (2011). Customer experience impact report. Retrieved from https://www.oracle.com/us/products/applications/cust-exp-impact-report-epss-1560493.pdf
