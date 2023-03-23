@@ -29,7 +29,7 @@ As a business analyst, I’ve defined the scope of the experiment. I will attemp
 In this experiment case, pretransformed data is provided in multiple formats. I will first merge these data utilizing SSIS for better utilization in the subsequent processes. In the professional enviroment, data utilized for this experiment would be held in the company's secured SQL server. This would further require extraction from said server, subjected to the company's approval. 
 
 # Pre-requisites
-Apart from the pre-installed Microsoft Office Suite, we need to install 2 important softwares.
+Apart from the pre-installed Microsoft Office Suite, we need to install 5 important softwares.
 
 1. **Power BI**, an open source Data Visualization software created by Microsoft as part of the Microsoft Business Intelligence Toolkit.
     - Download Power BI.
